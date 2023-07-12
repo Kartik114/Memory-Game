@@ -1,6 +1,6 @@
 # Memory-Game
 🤩 Hurrah! Welcome to Halloween Card Matching Game to test your memory retaining skills.
-This is an amazing Card Memory Game where you have to match more and more card pairs to complete 
+This is an amazing Game where you have to match more and more card pairs to complete 
 the game in given time.
 
 Small Guide: 
