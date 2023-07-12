@@ -12,7 +12,7 @@ Mouse Cursor to another card.
 
 Let's dive in the game !!!😏
 
-Link :- https://github.com/Kartik114/Memory-Game
+Link :- https://kartik114.github.io/Memory-Game/
 
 Some Pics:
 
