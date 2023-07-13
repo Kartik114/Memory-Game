@@ -16,5 +16,4 @@ Link :- https://kartik114.github.io/Memory-Game/
 
 Some Pics:
 
-![image](https://github.com/Kartik114/Memory-Game/assets/76644198/0ef1e097-9121-4523-b0ec-908abe6c53d8)
-![image](https://github.com/Kartik114/Memory-Game/assets/76644198/cc54e09b-ed10-4194-838b-07d1b003264c)
+ 
