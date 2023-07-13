@@ -46,7 +46,7 @@ class MixorMatch {
   }
 
   startGame() {
-    
+
     this.ispaused = false;
     this.isstop = false;
     this.cardToCheck = null;
@@ -75,19 +75,21 @@ class MixorMatch {
     //   }
     // }
     var p = document.getElementsByClassName("pause")[0];
- 
+
     p.addEventListener("click", ()=>{
-          
+
       if (this.ispaused) {
         this.resumeGame();
+        this.busy = false;
         p.innerText = "Pause";
       } else {
+        this.busy = true;
         p.innerText = "Resume";
         this.pauseGame();
       }
-      
+
     },false);
-   
+
     var q = document.getElementsByClassName("sound")[0];
     q.addEventListener("click", () => {
       if (this.isstop) {
@@ -149,7 +151,7 @@ class MixorMatch {
       card2.classList.remove("visible");
       this.busy = false;
     }, 1000);
-  
+
   }
 
   getCardType(card) {
@@ -165,12 +167,12 @@ class MixorMatch {
         this.gameOver();
       }
     }, 1000);
- 
+
   }
 
   gameOver() {
     clearInterval(this.countDown);
-     
+
     this.audioController.gameOver();
     document.getElementById("game-over-text").classList.add("visible");
     this.hideCards();
@@ -178,7 +180,7 @@ class MixorMatch {
 
   victory() {
     clearInterval(this.countDown);
-    
+
     this.audioController.victory();
     document.getElementById("victory-text").classList.add("visible");
     this.hideCards();
@@ -196,7 +198,7 @@ class MixorMatch {
     // card not busy i.e. not flipped already , not an already matched card , card is not equal to card to check only
     return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
   }
-  
+
   resumeGame() {
     this.ispaused = false;
     this.countDown = this.startCountDown();
@@ -204,7 +206,7 @@ class MixorMatch {
   }
 
   pauseGame() {
-   
+
     this.ispaused = true;
     clearInterval(this.countDown);
     this.audioController.stopMusic();

@@ -41,3 +41,28 @@ rotate , scale etc
 
 url selectors -> using font face , we can define our own font-family wrt some
 available fonts using url src.
+
+****
+1. when click backed off card transition help to swap smmothly back to front.
+2. when clicked back side rotate 180 degrees Y 
+3. dancing animation in case of front faace visible , used keyframes from to to scenese.
+
+
+
+
+-------------
+js
+1. settimeout(function,timeinms); //start function in time ms run once
+2. element.addEventListener("click",()=>{
+body});
+3. setinterval(func,time ms); // run func every time ms
+4.clearinterval(obj of setintercval)
+5.  /* css grid order property shuffle order of cards */
+  shuffleCards() {
+    for (let i = this.cardsArray.length - 1; i > 0; i--) {
+      let randIndex = Math.floor(Math.random() * (i + 1));
+      this.cardsArray[randIndex].style.order = i;
+      this.cardsArray[i].style.order = randIndex;
+    }
+  }
+shuffle logic
